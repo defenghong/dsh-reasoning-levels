@@ -1,0 +1,31 @@
+{
+  "name": "dsh-reasoning",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Discover model-family reasoning candidates across providers and enable the native Harness selector; preserve explicit capabilities and provider defaults.",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "capabilities.js",
+    "discovery.js",
+    "report.js",
+    "cordis.patch.yml",
+    "locale",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "license": "Apache-2.0"
+}

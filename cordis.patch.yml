@@ -1,0 +1,4 @@
+- insert:
+    - id: local-reasoning-levels
+      name: 'dsh-reasoning'
+      config: {}
